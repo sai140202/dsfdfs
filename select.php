@@ -60,6 +60,7 @@ if($totalitems > 0)
     <th>Sl.</th>
     <th>Image</th>
     <th>Name</th>
+    <th>Gender</th>
     <th>Email</th>
     <th>Phone</th>
     <th>Role</th>
@@ -78,6 +79,7 @@ while($row = mysqli_fetch_assoc($result)) {
   $fldEmail = $row['fldEmail'];
   $fldPhone = $row['fldPhone'];
   $fldMessage = $row['fldMessage'];
+  $fldGender = $row['fldGender'];
 
   /* Create a table row (tr) with 7 columns */
   $rowstring .= '<tr>
@@ -86,6 +88,7 @@ while($row = mysqli_fetch_assoc($result)) {
       <img src="uploads/' . $imagePath . '" width="50" height="50">
     </td>
     <td>' . $fldName . '</td>
+    <td>'.$fldGender.'</td>
     <td style="width: 20%;">' . $fldEmail . '</td>
     <td>' . $fldPhone . '</td>
     <td>' . $fldMessage . '</td>

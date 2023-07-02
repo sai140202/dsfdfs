@@ -35,6 +35,7 @@ if($totalitems > 0){
 		$fldEmail=$row['fldEmail'];
 		$fldPhone=$row['fldPhone'];
 		$fldMessage=$row['fldMessage'];
+		$gender=$row['fldGender'];
 		
 		
 			
@@ -51,6 +52,15 @@ if($totalitems > 0){
 					  Valid first name is required.
 					</div>
 		</p>
+		<label for="gender">Gender</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="male" name="gender" value="male" <?php if ($gender === 'male') echo 'checked="checked"'; ?>>
+      <label class="form-check-label" for="male">Male</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" id="female" name="gender" value="female" <?php if ($gender === 'female') echo 'checked="checked"'; ?>>
+      <label class="form-check-label" for="female">Female</label>
+    </div>
 		<p>
 		  <label for="email">Your Email</label>
 		  <input type="text"  class="form-control"  name="txtEmail" id="txtEmail" placeholder="Email" value="<?php echo $fldEmail;?>" required>
@@ -63,6 +73,10 @@ if($totalitems > 0){
 		  <label for="message">Message</label>
 		  <textarea name="txtMessage" class="form-control"  id="txtMessage"  placeholder="Message" required><?php echo $fldMessage;?></textarea>
 		</p>
+		<p>
+        <input type="file" 
+        name="my_image">
+       </p>
 		<p>&nbsp;</p>
 		<p>
 		  <input type="submit" name="Submit" id="Submit" value="Click me to Update"  class="btn btn-primary btn-lg btn-block">

@@ -6,7 +6,7 @@ $txtName = $_POST['txtName'];
 $txtEmail = $_POST['txtEmail'];
 $txtPhone = $_POST['txtPhone'];
 $txtMessage = $_POST['txtMessage'];
-// $imagePath = $_POST['img'];
+$txtGender = $_POST['gender'];
 
 // uploading image
 echo "<pre>";
@@ -34,7 +34,7 @@ echo "<pre>";
 		
 
 	
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage` , `img`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone','$txtMessage','$new_img_name')";
+$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage` , `img`,`fldGender`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone','$txtMessage','$new_img_name','$txtGender')";
 
 $rs = mysqli_query($con, $sql);
 
