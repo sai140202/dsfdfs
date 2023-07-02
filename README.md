@@ -7,8 +7,8 @@ Helpful for the PHP begginers.
 Please, visit for more PHP coding description  https://www.raghwendra.com/blog/insert-update-delete-php-mysql-example-git-downloads/
 
 ## Author
-* Raghwendra Ojha
-* (Co-Founder) Raghwendra Web Services
+* Jason Richard (dominar owner)
+* (Co-Founder) sudar (kadala specialist)
 * https://www.raghwendra.com/
 ## Technologies
 * HTML
